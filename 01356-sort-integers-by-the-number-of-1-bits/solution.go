@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits
 func sortByBits(arr []int) []int {
 	sort.Slice(arr, func(i, j int) bool {
 		cnt1 := bits.OnesCount(uint(arr[i]))
